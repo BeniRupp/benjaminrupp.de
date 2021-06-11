@@ -8,10 +8,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "check:html": "vnu src/index.html",
-    "watch": "watch 'yarn check:html' src"
+    "develop": "node devServer.js",
+    "check:html": "watch 'vnu src/index.html && echo HTML syntax okay.👌' src"
   },
   "devDependencies": {
+    "livereload": "^0.9.3",
+    "node-static": "^0.7.11",
     "watch": "^1.0.2"
   }
 }
