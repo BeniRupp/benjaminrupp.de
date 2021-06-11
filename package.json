@@ -6,5 +6,12 @@
   "repository": "git@github.com:BeniRupp/benjaminrupp.de.git",
   "author": "Benjamin Rupp <github@benjaminrupp.de>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "check:html": "vnu src/index.html",
+    "watch": "watch 'yarn check:html' src"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
 }
