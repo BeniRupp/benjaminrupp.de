@@ -1,6 +1,5 @@
-@import "reset.css";
-@import "fonts.css";
-@import "global.css";
+@import 'reset.css';
+@import 'fonts.css';
+@import 'global.css';
 
-@import "navigation.css";
-@import "landingpage.css";
+@import 'landingpage.css';
