@@ -1,0 +1,10 @@
+{
+  "name": "benjaminrupp.de",
+  "version": "1.0.0",
+  "description": "Website with plain HTML, CSS and a bit of JS.",
+  "main": "index.js",
+  "repository": "git@github.com:BeniRupp/benjaminrupp.de.git",
+  "author": "Benjamin Rupp <github@benjaminrupp.de>",
+  "license": "MIT",
+  "private": true
+}
