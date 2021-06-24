@@ -1,0 +1,33 @@
+<template>
+  <nav class="navigation">
+    <a class="navigation__home" href="/">👋</a>
+    <ul class="navigation__links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="dummeFrage.html">Dumme Frage?!</a></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <style>
+    @import '../css/main.css';
+
+    .navigation {
+      display: flex;
+      padding: 0.5rem 2rem;
+    }
+
+    .navigation .navigation__links {
+      flex: 0 1 auto;
+      margin-left: auto;
+
+      list-style: none;
+      display: flex;
+    }
+    .navigation .navigation__links li + li {
+      margin-left: 2rem;
+    }
+    .navigation a {
+      border: 0;
+    }
+  </style>
+</template>
