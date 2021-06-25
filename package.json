@@ -9,11 +9,13 @@
   "private": true,
   "scripts": {
     "develop": "node devServer.js",
-    "check:html": "watch 'vnu src/index.html && echo HTML syntax okay.👌' src"
+    "vnu": "vnu src/*.html && vnu --filterfile vnuTemplateFilter src/components/**/*.js",
+    "check:html": "watch 'yarn vnu && echo HTML syntax okay.👌' src"
   },
   "devDependencies": {
     "livereload": "^0.9.3",
     "node-static": "^0.7.11",
+    "vnu": "^20.6.30",
     "watch": "^1.0.2"
   }
 }

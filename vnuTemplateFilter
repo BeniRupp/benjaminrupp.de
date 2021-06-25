@@ -1,0 +1,3 @@
+.*Start tag seen without seeing a doctype first.*
+.*Element “head” is missing.*
+.*Consider adding a “lang” attribute.*
