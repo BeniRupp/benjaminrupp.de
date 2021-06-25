@@ -6,21 +6,23 @@
     <title>Hi, ich bin Beni!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="components/PageNavigation.js" defer></script>
+    <script src="./components/PageLayout.js" type="module"></script>
   </head>
   <body>
-    <page-navigation></page-navigation>
-    <header class="welcome">
-      <h1>Hi, ich bin Beni!</h1>
-      <p>
-        Ich mag das Web und möchte gerne die Grundlagen und Zusammenhänge besser
-        verstehen können.
-      </p>
-      <p>
-        Diese Website ist ein Experiment, wie weit ich mit reinem HTML, CSS und
-        etwas JS komme. 🧪
-      </p>
-    </header>
-    <main></main>
+    <page-layout>
+      <header class="welcome">
+        <h1>Hi, ich bin Beni!</h1>
+        <p>
+          Ich mag das Web und möchte gerne die Grundlagen und Zusammenhänge
+          besser verstehen können.
+        </p>
+        <p>
+          Diese Website ist ein Experiment, wie weit ich mit reinem HTML, CSS
+          und etwas JS komme. 🧪
+        </p>
+      </header>
+      <main></main>
+    </page-layout>
+    <template id="test-template"><p>hello world</p></template>
   </body>
 </html>

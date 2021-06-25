@@ -1,0 +1,22 @@
+<template>
+  <div class="page-wrapper">
+    <page-navigation></page-navigation>
+    <div class="page-layout">
+      <slot></slot>
+    </div>
+  </div>
+
+  <style>
+    .page-wrapper {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .page-layout {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 5rem 0;
+      flex: 1 0 auto;
+    }
+  </style>
+</template>

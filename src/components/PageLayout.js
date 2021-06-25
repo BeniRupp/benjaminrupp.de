@@ -1,6 +1,7 @@
 import loadTemplateContent from '../helper/TemplateLoader.js'
+import './PageNavigation.js'
 
-class PageNavigation extends HTMLElement {
+class PageLayout extends HTMLElement {
   constructor() {
     super()
     this.attachShadow({ mode: 'open' })
@@ -8,10 +9,10 @@ class PageNavigation extends HTMLElement {
 
   async connectedCallback() {
     const templateContent = await loadTemplateContent(
-      'components/PageNavigation.html'
+      'components/PageLayout.html'
     )
     this.shadowRoot.appendChild(templateContent)
   }
 }
 
-customElements.define('page-navigation', PageNavigation)
+customElements.define('page-layout', PageLayout)
