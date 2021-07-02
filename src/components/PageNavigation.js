@@ -7,6 +7,7 @@ class PageNavigation extends HTMLElement {
   }
 
   async connectedCallback() {
+    // TODO: fix flickering on page change
     const templateContent = await loadTemplateContent(
       'components/PageNavigation.html'
     )
