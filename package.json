@@ -8,8 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "develop": "node devServer.js",
-    "vnu": "vnu src/*.html && vnu --filterfile vnuTemplateFilter src/components/**/*.js",
+    "develop": "yarn livereload src/ -d",
+    "vnu": "vnu src/*.html && vnu --filterfile vnuIncludeFileFilter src/includes/*.html",
     "check:html": "watch 'yarn vnu && echo HTML syntax okay.👌' src"
   },
   "devDependencies": {
