@@ -4,8 +4,7 @@ body {
 
 a,
 a:visited {
-  color: black;
-  font-family: 'Fira Code';
+  color: inherit;
   font-weight: bold;
   text-decoration: none;
   text-decoration-color: black;
@@ -19,4 +18,94 @@ h1 {
   text-decoration-line: underline;
   text-decoration-thickness: 5px;
   margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 3.3rem;
+  margin-bottom: 1.7rem;
+}
+h4,
+h5,
+h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 75ch;
+}
+p + p {
+  margin-top: 2.5rem;
+}
+
+hr {
+  border: 2px dashed black;
+  margin: 4rem;
+}
+
+blockquote {
+  margin: 4rem;
+  font-style: italic;
+}
+
+code,
+samp,
+del,
+ins {
+  font-size: 90%; /* fira code is a bit higher than the other font */
+  background-color: #eee;
+  padding: 0px 6px;
+  border-radius: 3px;
+}
+pre {
+  background-color: #eee;
+  padding: 2rem;
+}
+del,
+ins {
+  text-decoration: none;
+  display: block;
+  padding-left: 50px;
+  position: relative;
+}
+del {
+  background-color: #ff000036;
+}
+del::before {
+  content: '-';
+  position: absolute;
+  left: 20px;
+}
+ins {
+  background-color: #00ff7336;
+}
+ins::before {
+  content: '+';
+  position: absolute;
+  left: 20px;
+}
+kbd {
+  font-size: 70%;
+  border: 1px solid #bbbb;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 0 6px;
+  box-shadow: 1px 2px 1px #eee;
+}
+mark {
+  background-color: #ffe300;
+}
+q::before {
+  content: '»';
+}
+q::after {
+  content: '«';
+}
+q q::before {
+  content: '›';
+}
+q q::after {
+  content: '‹';
 }
