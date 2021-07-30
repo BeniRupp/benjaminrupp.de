@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  font-family: 'Fira Code';
+}
+
+header .logo {
+  flex: 0 1 auto;
+}
+header a {
+  border: 0;
+}
+
+header nav {
+  flex: 0 0 auto;
+  margin-top: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li + li {
+  margin-left: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    flex-direction: row;
+    padding: 1.5rem 6rem;
+  }
+  header nav {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
