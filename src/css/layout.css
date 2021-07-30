@@ -1,6 +1,11 @@
 .page-layout {
-  width: 60vw;
-  margin: 0 auto;
-  padding: 5rem 0;
-  flex: 1 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .page-layout {
+    width: 60vw;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
 }

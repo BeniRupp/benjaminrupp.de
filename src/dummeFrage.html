@@ -6,6 +6,34 @@
     <title>Dumme Frage?!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <style lang="css">
+      body {
+        counter-reset: footnotes;
+        counter-reset: footnote-references;
+      }
+      article {
+        margin: 2em 0;
+      }
+      summary h3 {
+        display: inline;
+      }
+      sup a::after {
+        counter-increment: footnote-references;
+        content: '[' counter(footnote-references) ']';
+        font-weight: normal;
+      }
+      sup a {
+        border-width: 0;
+      }
+
+      ol.footnotes {
+        margin-left: 2.5rem;
+      }
+      .footnotes a {
+        font-weight: normal;
+        font-size: 1rem;
+      }
+    </style>
   </head>
   <body>
     <!--# include file="includes/navigation.html"-->
@@ -18,12 +46,60 @@
         distinctio enim id!
       </p>
 
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae dolores
-        et voluptatem soluta tenetur, exercitationem, dignissimos provident quia
-        dolore eligendi numquam facilis animi, sit veritatis! Facere esse
-        distinctio enim id!
-      </p>
+      <article>
+        <details open>
+          <summary>
+            <h3>Was ist der Unterschied zwischen URI und URL?</h3>
+          </summary>
+          <p>
+            Eine URI (Uniform Resource Identifier) identifiziert eine logische
+            oder physikalische Resource welche von Webtechnologien verwendet
+            wird.<sup><a href="#footnote-uri"></a></sup>
+          </p>
+          <p>
+            Eine URL (Uniform Resource Locator) gibt an, <em>wo</em> eine
+            Ressource im Internet zu finden ist.<sup
+              ><a href="#footnote-url"></a
+            ></sup>
+            Im Kontext von HTTP spricht man dann von einer "Website" oder einem
+            "Link". URLs können aber auch zum Übertragen von Dateien (ftp) oder
+            Versenden von E-Mails (mailto) verwendet werden.
+          </p>
+          <p>Eine URL ist eine URI.</p>
+        </details>
+      </article>
+
+      <article>
+        <details>
+          <summary>
+            <h3>Another Question?</h3>
+          </summary>
+          <p>
+            Eine URI (Uniform Resource Identifier) identifiziert eine logische
+            oder physikalische Resource welche von Webtechnologien verwendet
+            wird.<sup><a href="#footnote-another"></a></sup>
+          </p>
+        </details>
+      </article>
+
+      <footer>
+        <h2>Quellen</h2>
+        <ol class="footnotes">
+          <li id="footnote-uri">
+            <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier"
+              >https://en.wikipedia.org/wiki/Uniform_Resource_Identifier</a
+            >
+          </li>
+          <li id="footnote-url">
+            <a href="https://en.wikipedia.org/wiki/URL"
+              >https://en.wikipedia.org/wiki/URL</a
+            >
+          </li>
+          <li id="footnote-another">
+            <a href="https://benjaminrupp.de">https://benjaminrupp.de</a>
+          </li>
+        </ol>
+      </footer>
     </main>
   </body>
 </html>
