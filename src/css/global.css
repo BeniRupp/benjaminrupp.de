@@ -42,7 +42,7 @@ h6 {
 p {
   max-width: 75ch;
 }
-p + p {
+p:not(:first-child) {
   margin-top: 2.5rem;
 }
 
